@@ -17,23 +17,25 @@ import java.io.IOException;
 public class Exercicio1 {
 
     public static void main(String[] args) {
-        Scanner leitura = new Scanner(System.in);
-        System.out.println("Insira o nome do arquivo:");
-        String ArquivoNome = leitura.nextLine();
-          	
-	    try {
-	    	FileInputStream novoArquivo = new FileInputStream(ArquivoNome);
-                int valorSaida;
-            try (DataInputStream dataIn = new DataInputStream(novoArquivo)) {
-                valorSaida = dataIn.readInt();
-            }
-	    	
-	    	System.out.println(Integer.toHexString(valorSaida));
-	    	
-	    } catch (IOException excecao) {
-	        System.out.println("Desculpe, houve um erro. Tente novamente");
-	          excecao.getMessage();
-	    }
+        String ArquivoNome;
+        try (Scanner leitura = new Scanner(System.in)) {
+            System.out.println("Insira o nome do arquivo:");
+            ArquivoNome = leitura.nextLine();
+        }
+        try {
+            FileInputStream novoArquivo = new FileInputStream(ArquivoNome);
+
+            int valorSaida;
+
+            DataInputStream dataIn = new DataInputStream(novoArquivo);
+            valorSaida = dataIn.readInt();
+
+            System.out.println(Integer.toHexString(valorSaida));
+
+        } catch (IOException excecao) {
+            System.out.println("Desculpe, houve um erro. Tente novamente");
+            excecao.getMessage();
+        }
     }
 
 }
