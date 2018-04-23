@@ -36,7 +36,7 @@ public class Exercicio7 {
         wr.write(url.toString());
         wr.flush();
 
-//display what returns the POST request
+//display what returns the post request
 
         StringBuilder sb = new StringBuilder();
         int HttpResult = con.getResponseCode();
