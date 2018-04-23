@@ -18,8 +18,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/topico2/src/java/br/ufg/inf/es/atividade1/exercicio2/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+            <state relative-caret-position="68">
+              <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -33,16 +33,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Serelizador.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Serelizador.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/topico2/src/java/br/ufg/inf/es/atividade1/exercicio2/Serelizador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state>
+              <caret selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Exercicio7.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/topico2/src/java/br/ufg/inf/es/atividade2/Exercicio7.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -50,10 +69,11 @@
         <option value="$PROJECT_DIR$/topico2/src/java/br/ufg/inf/es/atividade1/exercicio2/Pessoa.java" />
         <option value="$PROJECT_DIR$/topico2/src/java/br/ufg/inf/es/atividade1/exercicio2/Main.java" />
         <option value="$PROJECT_DIR$/topico2/src/java/br/ufg/inf/es/atividade1/exercicio2/Serelizador.java" />
+        <option value="$PROJECT_DIR$/topico2/src/java/br/ufg/inf/es/atividade2/Exercicio7.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="514" />
     <option name="width" value="859" />
     <option name="height" value="735" />
@@ -76,6 +96,34 @@
               <item name="i-2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="i-2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="i-2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
+              <item name="atividade1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="i-2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
+              <item name="atividade1" type="462c0819:PsiDirectoryNode" />
+              <item name="exercicio2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="i-2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
+              <item name="atividade2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -178,7 +226,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.01650165" />
@@ -188,7 +236,7 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32933104" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32933104" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" weight="0.32838285" />
       <window_info id="Capture Tool" />
@@ -212,13 +260,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/topico2/src/java/br/ufg/inf/es/atividade1/exercicio2/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/topico2/src/java/br/ufg/inf/es/atividade1/exercicio2/Pessoa.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -226,10 +267,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/topico2/src/java/br/ufg/inf/es/atividade1/exercicio2/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/topico2/src/java/br/ufg/inf/es/atividade1/exercicio2/Serelizador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state>
+          <caret selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topico2/src/java/br/ufg/inf/es/atividade2/Exercicio7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
