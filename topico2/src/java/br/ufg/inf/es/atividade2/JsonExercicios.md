@@ -62,7 +62,14 @@ d) sabor preferido: (nenhum valor fornecido para esta propriedade);
 
 * Por meio do portal de serviços http://www.jsontest.com/ várias requisições podem ser realizadas e cujas respostas seguem no formato JSON. Por exemplo, o comando curl http://headers.jsontest.com produz como resultado, em formato JSON, todos os headers enviados na requisição. Usando o curl com a opção -v é possível verificar que, de fato, todos os headers enviados são retornados no formato JSON. Outra requisição é curl http://ip.jsontest.com que retorna o endereço IP da origem da requisição. Exercite os serviços oferecidos por esse portal.
 <pre>
-
+Usando: {"ip": "http://ip.jsontest.com/"} será retornado o ip  
+usando:  
+{ 
+   "time" :  "12:33:07 AM" , 
+   "milliseconds_since_epoch" :  1362345679 , 
+   "date" :  "22/02-2013" 
+}
+Retorna um objeto JSON com a data e a hora atuais em formato legível e o número atual de milissegundos desde a época do UNIX
 </pre>
 
 * O GitHub oferece uma API cujas informações enviadas e recebidas seguem o formato JSON. Por exemplo, curl https://api.github.com/users/kyriosdata fornece detalhes desse usuário, por meio de dados no formato JSON, sem necessidade de autenticação. De fato, muitas informações podem ser obtidas conforme a API. A documentação da API está disponível em https://developer.github.com/v3/.
