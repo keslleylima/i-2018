@@ -7,14 +7,26 @@ import java.io.*;
  */
 public class Serelizador {
 
-    public int TamanhoEmBytes(Serializable s) throws IOException {
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        ObjectOutputStream oos = new ObjectOutputStream(baos);
+    public  boolean serializar(Object objeto, ByteArrayOutputStream outputStream) throws IOException {
 
-        oos.writeObject(s);
-        oos.close();
+        ObjectOutputStream objectOut = new ObjectOutputStream(new BufferedOutputStream(outputStream));
+        objectOut.writeObject(objeto);
+        return true;
 
-        return baos.toByteArray().length;
+
+    }
+
+
+    public  Pessoa deserializar(String nomeArq) throws IOException, ClassNotFoundException {
+
+        if (nomeArq.equals(null) || nomeArq.trim().isEmpty()) {
+            throw new IllegalArgumentException("Nome invalido!");
+        }
+
+        FileInputStream inFile = new FileInputStream(nomeArq);
+        ObjectInputStream ObjectIn = new ObjectInputStream(inFile);
+        Pessoa objeto = (Pessoa)ObjectIn.readObject();
+        return objeto;
     }
 
 
