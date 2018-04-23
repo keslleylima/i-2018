@@ -7,26 +7,26 @@ import java.io.*;
  */
 public class Serelizador {
 
-    public  boolean serializar(Object objeto, ByteArrayOutputStream outputStream) throws IOException {
-
-        ObjectOutputStream objectOut = new ObjectOutputStream(new BufferedOutputStream(outputStream));
-        objectOut.writeObject(objeto);
-        return true;
-
+    public byte[] serializar(Object objeto) throws IOException {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+        oos.writeObject(objeto);
+        oos.close();
+        byte[] bytes = baos.toByteArray();
+        return  bytes;
 
     }
 
 
-    public  Pessoa deserializar(String nomeArq) throws IOException, ClassNotFoundException {
+    public  Pessoa deserializar(byte[] bytes) throws IOException, ClassNotFoundException {
 
-        if (nomeArq.equals(null) || nomeArq.trim().isEmpty()) {
-            throw new IllegalArgumentException("Nome invalido!");
-        }
-
-        FileInputStream inFile = new FileInputStream(nomeArq);
-        ObjectInputStream ObjectIn = new ObjectInputStream(inFile);
-        Pessoa objeto = (Pessoa)ObjectIn.readObject();
-        return objeto;
+        ByteArrayInputStream baos = new ByteArrayInputStream(bytes);
+        ObjectInputStream obj = new ObjectInputStream(baos);
+        Pessoa p;
+        p = null;
+        p = (Pessoa) obj.readObject();
+        obj.close();
+        return p;
     }
 
 

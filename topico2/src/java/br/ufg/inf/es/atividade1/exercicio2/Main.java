@@ -12,14 +12,10 @@ public class Main {
 
     public static void main(String[] args) throws ClassNotFoundException {
         try {
-            ByteArrayOutputStream byt = new ByteArrayOutputStream();
             Pessoa pessoa = new Pessoa("Keslley","lima",839393);
             Serelizador serelizador = new Serelizador();
-            serelizador.serializar(pessoa,byt);
-            Pessoa pessoa1 = serelizador.deserializar(args[3]);
-            System.out.println(pessoa.getCpf());
-            System.out.println(pessoa.getSobrenome());
-            System.out.println(pessoa.getNome());
+            byte[] bytes = serelizador.serializar(pessoa);
+            Pessoa pessoa1 = serelizador.deserializar(bytes);
         } catch (IOException i) {
             i.printStackTrace();
         }
