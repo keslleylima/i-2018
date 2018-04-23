@@ -75,5 +75,5 @@ Retorna um objeto JSON com a data e a hora atuais em formato legível e o númer
 * O GitHub oferece uma API cujas informações enviadas e recebidas seguem o formato JSON. Por exemplo, curl https://api.github.com/users/kyriosdata fornece detalhes desse usuário, por meio de dados no formato JSON, sem necessidade de autenticação. De fato, muitas informações podem ser obtidas conforme a API. A documentação da API está disponível em https://developer.github.com/v3/.
 Faça um programa que recupera a imagem associada ao usuário (avatar) e a persiste localmente em um arquivo. Sugestão: (a) usar HttpUrlConnection para recuperar tanto o JSON do Github quanto a imagem. Observe que a informação desejada será obtida pelo InputStream obtido pelo método getInputStream; (b) recuperar o valor da chave “avatar_url” pode ser feito usando Jackson ou Gson.
 <pre>
-
+Respota em: https://github.com/keslleylima/i-2018/blob/master/topico2/src/java/br/ufg/inf/es/atividade2/Exercicio7.java
 </pre>
