@@ -1,6 +1,4 @@
-
-package br.ufg.inf.es.atividade2;
-
+package br.ufg.inf.es.exercicio1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
