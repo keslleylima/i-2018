@@ -1,4 +1,4 @@
-package br.ufg.inf.es.atividade1.exercicio2;
+package br.ufg.inf.es.exercicio2;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;

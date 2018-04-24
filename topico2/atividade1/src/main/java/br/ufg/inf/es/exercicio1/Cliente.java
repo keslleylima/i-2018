@@ -1,4 +1,4 @@
-package br.ufg.inf.es.atividade1.exercicio1;
+package br.ufg.inf.es.exercicio1;
 
 /**
  * Created by keslley
