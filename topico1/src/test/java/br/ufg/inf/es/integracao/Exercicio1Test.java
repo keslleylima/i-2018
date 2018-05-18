@@ -6,7 +6,7 @@
 
 package br.ufg.inf.es.integracao;
 
-import br.ufg.inf.es.integracao.Exercicio1;
+import br.ufg.inf.es.integracao.exercicio1.Exercicio1;
 import org.junit.Test;
 import java.io.IOException;
 
