@@ -11,12 +11,12 @@ public class Exercicio4Test {
     @Test
 
     public void arquivoValido() throws IOException {
-        Assert.assertEquals(true,Exercicio4.validaNomeArquivo(""));
+        Assert.assertEquals(false,Exercicio4.validaNomeArquivo(""));
     }
 
     @Test
     public void conteudoValido() throws IOException {
-        Assert.assertEquals(true,Exercicio4.validaNomeConteudo(""));
+        Assert.assertEquals(false,Exercicio4.validaNomeConteudo(""));
     }
 
 }

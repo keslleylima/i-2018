@@ -3,7 +3,6 @@ package br.ufg.inf.es.integracao.exercicio6;
 import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.nio.ByteBuffer;
 
 /**
  * Porgrama que recebe um único argumento correspondente ao nome de um arquivo
@@ -17,7 +16,7 @@ public class Exercicio6 {
      */
     public static void main(String[] args) {
         try {
-            converteParaArquivo(args[0]);
+            exibirTexto(args[0]);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -26,41 +25,32 @@ public class Exercicio6 {
     /**
      * Esse método recebe o nome de um arquivo e exibi o contéudo
      * correspondente em UTF-8;
-     * @param seqByte é o parametro referente ao nome do arquivo binário.
+     * @param arq é o parametro referente ao nome do arquivo binário.
      * @throws IOException lançamento de excessão caso sejá necessário.
      */
-    public static void converteParaArquivo(String seqByte) throws IOException {
-        if(validaBytes(seqByte)){
-            FileInputStream file = new FileInputStream(seqByte);
-            DataInputStream dis = new DataInputStream(file);
+    public static void exibirTexto(String arq) throws IOException {
+        if(validaNomeArquivo(arq)){
 
-            byte[] intByte = new byte[4];
-            int lineByteAmount;
+            FileInputStream tmp = new FileInputStream(arq);
+            DataInputStream tmpfile = new DataInputStream(tmp);
+            int aux;
 
-
-            while ((lineByteAmount = dis.read(intByte)) != -1) {
-
-                lineByteAmount = ByteBuffer.wrap(intByte).getInt();
-                byte[] byteArray = new byte[lineByteAmount];
-                dis.read(byteArray);
-                String str = new String(byteArray, "UTF-8");
-                System.out.printf(str);
+            while((aux = tmpfile.read()) != -1) {
+                System.out.print((char) aux);
             }
         }
-
-
     }
 
     /**
      * Esse método valide se  o arquivo é válido.
-     * @param arquivoByte parametro de entrada que é o arquivo de saída.
+     * @param arquivoByte parametro de entrada que é o nome do arquivo binario.
      * @return retorna o valor booleano (true ou false).
      */
-    public static boolean validaBytes (String arquivoByte){
+    public static boolean validaNomeArquivo (String arquivoByte){
         if (arquivoByte.equals(null) || arquivoByte.equals("")) {
-            return true;
-        }else{
             return false;
+        }else{
+            return true;
         }
     }
 }

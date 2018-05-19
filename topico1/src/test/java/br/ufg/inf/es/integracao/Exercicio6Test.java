@@ -10,6 +10,6 @@ public class Exercicio6Test {
 
     @Test
     public void ValorArquivoSaidaVazio() throws IOException {
-        Assert.assertEquals(true,Exercicio6.validaBytes(""));
+        Assert.assertEquals(false,Exercicio6.validaNomeArquivo(""));
     }
 }

@@ -10,11 +10,11 @@ public class Exercicio5Test {
     @Test
 
     public void ValorArquivoEntradaVazio() throws IOException {
-        Assert.assertEquals(true,Exercicio5.validaNomeArquivoEntrada(""));
+        Assert.assertEquals(false,Exercicio5.validaNomeArquivoEntrada(""));
     }
 
     @Test
     public void ValorArquivoSaidaVazio() throws IOException {
-        Assert.assertEquals(true,Exercicio5.validaNomeArquivoSaida(""));
+        Assert.assertEquals(false,Exercicio5.validaNomeArquivoSaida(""));
     }
 }

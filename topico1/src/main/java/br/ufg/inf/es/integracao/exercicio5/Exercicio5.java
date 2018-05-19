@@ -38,7 +38,6 @@ public class Exercicio5 {
         if(validaNomeArquivoEntrada(arquivoIn) && validaNomeArquivoSaida(arquivoOut)){
             Charset utf8 = Charset.forName("UTF-8");
             Path file = Paths.get(arquivoIn);
-
             FileOutputStream arqBinario = new FileOutputStream(arquivoOut);
             DataOutputStream archive = new DataOutputStream(arqBinario);
 
@@ -60,9 +59,9 @@ public class Exercicio5 {
      */
     public static boolean validaNomeArquivoEntrada (String arquivoIn){
         if (arquivoIn.equals(null) || arquivoIn.equals("")) {
-            return true;
-        }else{
             return false;
+        }else{
+            return true;
         }
     }
 
@@ -74,9 +73,9 @@ public class Exercicio5 {
      */
     public static boolean validaNomeArquivoSaida (String arquivoOut){
         if (arquivoOut.equals(null) || arquivoOut.equals("")) {
-            return true;
-        }else{
             return false;
+        }else{
+            return true;
         }
     }
 }

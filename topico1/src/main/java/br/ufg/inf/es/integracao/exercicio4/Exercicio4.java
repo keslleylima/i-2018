@@ -5,8 +5,10 @@ import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 
 /**
- * Esse  programa (linha de comandos) cujo primeiro argumento é o nome de um arquivo e cujo segundo argumento é uma
- * sequência de caracteres. Quando executado, a sequência de caracteres fornecida como o segundo argumento é persistida
+ * Esse  programa (linha de comandos) cujo primeiro argumento é o nome
+ * de um arquivo e cujo segundo argumento é uma
+ * sequência de caracteres. Quando executado, a sequência de caracteres
+ * fornecida como o segundo argumento é persistida
  * (em UTF-8) no arquivo cujo nome é fornecido como primeiro argumento.
  */
 public class Exercicio4 {
@@ -49,9 +51,9 @@ public class Exercicio4 {
      */
     public static boolean validaNomeArquivo (String arquivo){
         if (arquivo.equals(null) || arquivo.equals("")) {
-            return true;
-        }else{
             return false;
+        }else{
+            return true;
         }
     }
 
@@ -62,9 +64,9 @@ public class Exercicio4 {
      */
     public static boolean validaNomeConteudo (String conteudo){
         if (conteudo.equals(null) || conteudo.equals("")) {
-            return true;
-        }else{
             return false;
+        }else{
+            return true;
         }
     }
 
