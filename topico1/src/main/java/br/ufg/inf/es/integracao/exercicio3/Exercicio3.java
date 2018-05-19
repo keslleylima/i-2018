@@ -12,6 +12,10 @@ import java.nio.file.Paths;
  */
 public class Exercicio3 {
 
+    /**
+     *  Esse método chama execução do método "verificaArquivoValido".
+     * @param args  é o arquivo de texto
+     */
     public static void main(String[] args) {
         try {
             if(verificaArquivoValido(args[0])){

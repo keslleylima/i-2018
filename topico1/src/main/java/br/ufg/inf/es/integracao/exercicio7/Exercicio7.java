@@ -12,6 +12,7 @@ import java.io.DataOutputStream;
  * Essa classe converte um arquivo texto em um arquivo binario.
  */
 public class Exercicio7 {
+
     /**
      * Esse metodo realiza a chamado do método responsável pela conversão
      * do texto em binário.

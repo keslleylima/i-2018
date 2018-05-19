@@ -15,6 +15,7 @@ import java.io.RandomAccessFile;
  * arquivo JPEG e que verifica se esta restrição é satisfeita ou não.
  */
 public class Exercicio2 {
+
     /**
      * Esse método exibe o resultado se o arquivo de entrada é ou não JPEG.
      * @param args parametro que é o nome do arquivo.
@@ -45,6 +46,7 @@ public class Exercicio2 {
             return true;
         }
     }
+
     /**
      * Esse método verifica se o nome de um arquivo é um arquivo JPEG.
      * @param nomeArquivo é o nome de um arquivo.

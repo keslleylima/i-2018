@@ -17,6 +17,11 @@ import java.nio.file.Paths;
  */
 public class Exercicio5 {
 
+    /**
+     * Esse méotdo chama a execução do método "converterEmBytes".
+     * @param args o primeiro parametro passado é  nome do arquivo texto e
+     * segundo parametro é o nome do arquivo a ser criado pelo programa.
+     */
     public static void main(String[] args) {
         try {
             converterEmBytes(args[0],args[1]);

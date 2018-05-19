@@ -12,6 +12,7 @@ import java.io.UnsupportedEncodingException;
  * (em UTF-8) no arquivo cujo nome é fornecido como primeiro argumento.
  */
 public class Exercicio4 {
+
     /**
      * Metodo principal que chama para execução da persistência dos dados;
      * @param args argumentos.
