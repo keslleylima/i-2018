@@ -1,6 +1,8 @@
 package topico2.src.main.java.br.ufg.inf.es.integracao.serelizacao.exercicio2;
 
-public class Cliente {
+import java.io.Serializable;
+
+public class Cliente implements Serializable {
     String nome;
     String identificador;
 
