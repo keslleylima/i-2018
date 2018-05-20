@@ -1,4 +1,4 @@
-package topico2.src.main.java.br.ufg.inf.es.integracao.serelizacao.exercicio2;
+package br.ufg.inf.es.integracao.serelizacao.exercicio2;
 
 import java.io.BufferedOutputStream;
 import java.io.ObjectOutputStream;
@@ -16,7 +16,7 @@ public class Serelizacao {
      * @param args não é passado nenhum argumento.
      */
     public static void main(String[] args) {
-        topico2.src.main.java.br.ufg.inf.es.integracao.serelizacao.exercicio2.Cliente cliente = new Cliente("keslley","14");
+        Cliente cliente = new Cliente("keslley","14");
         byte[] bytes;
 
         try {

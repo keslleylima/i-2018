@@ -1,4 +1,4 @@
-package topico2.src.main.java.br.ufg.inf.es.integracao.serelizacao.exercicio1;
+package br.ufg.inf.es.integracao.serelizacao.exercicio1;
 
 import java.io.*;
 

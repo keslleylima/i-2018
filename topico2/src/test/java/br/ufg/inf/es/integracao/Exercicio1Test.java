@@ -1,8 +1,8 @@
-package topico2.src.test.java.ufg.inf.ufg.br.integracao;
+package br.ufg.inf.es.integracao;
 
+import br.ufg.inf.es.integracao.serelizacao.exercicio1.Serelizador;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import topico2.src.main.java.br.ufg.inf.es.integracao.serelizacao.exercicio1.Serelizador;
 
 import java.io.IOException;
 

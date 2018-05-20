@@ -1,4 +1,4 @@
-package topico2.src.main.java.br.ufg.inf.es.integracao.serelizacao.exercicio2;
+package br.ufg.inf.es.integracao.serelizacao.exercicio2;
 
 import java.io.Serializable;
 

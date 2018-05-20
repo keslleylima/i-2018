@@ -1,9 +1,9 @@
-package topico2.src.test.java.ufg.inf.ufg.br.integracao;
+package br.ufg.inf.es.integracao;
 
+import br.ufg.inf.es.integracao.serelizacao.exercicio2.Cliente;
+import br.ufg.inf.es.integracao.serelizacao.exercicio2.Serelizacao;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import topico2.src.main.java.br.ufg.inf.es.integracao.serelizacao.exercicio2.Cliente;
-import topico2.src.main.java.br.ufg.inf.es.integracao.serelizacao.exercicio2.Serelizacao;
 
 public class Exercicio2Test {
     @Test

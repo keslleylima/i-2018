@@ -1,4 +1,4 @@
-package br.ufg.inf.es.integracao.serelizacao.exercicio7;
+package br.ufg.inf.es.integracao.exercicio7;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
