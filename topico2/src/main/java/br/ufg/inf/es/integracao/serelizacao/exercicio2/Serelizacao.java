@@ -16,7 +16,7 @@ public class Serelizacao {
      * @param args não é passado nenhum argumento.
      */
     public static void main(String[] args) {
-        Cliente cliente = new Cliente("keslley","14");
+        topico2.src.main.java.br.ufg.inf.es.integracao.serelizacao.exercicio2.Cliente cliente = new Cliente("keslley","14");
         byte[] bytes;
 
         try {
