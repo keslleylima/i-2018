@@ -7,7 +7,7 @@
 package br.ufg.inf.es.integracao.exercicio3;
 
 /**
- * CLasse que representa a entidade estudante.
+ * Classe que representa a entidade estudante.
  */
 public class Estudante {
     public String nome;
