@@ -10,7 +10,7 @@ package br.ufg.inf.es.integracao.exercicio2;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
-//import com.fasterxml.jackson.databind.MappingIterator;
+import com.fasterxml.jackson.databind.MappingIterator;
 import javax.xml.stream.XMLStreamReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -42,12 +42,12 @@ public class Exercicio2 {
                 if (cont == XMLStreamConstants.START_ELEMENT) {
                     String calcado = arquivo.getLocalName();
                     if (calcado.equals("tenis")) {
-                        //Tenis tenis = mapper.readValue(arquivo, Tenis.class);
-                        //tenisAux.add(qt_tenis, tenis);
+                        Tenis tenis = mapper.readValue(arquivo, Tenis.class);
+                        tenisAux.add(qt_tenis, tenis);
                         qt_tenis++;
                     } else {
-                        //Sapato sapatos = mapper.readValue(arquivo, Sapato.class);
-                        //sapatosAux.add(qt_sapato, sapatos);
+                        Sapato sapatos = mapper.readValue(arquivo, Sapato.class);
+                        sapatosAux.add(qt_sapato, sapatos);
                         qt_sapato++;
                     }
                 }
