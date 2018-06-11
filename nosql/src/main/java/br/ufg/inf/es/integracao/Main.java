@@ -23,10 +23,10 @@ public class Main {
 
             MongoCursor<Document> cursor = individuos.find().iterator();
 
-//            Document novoUser = new Document("name","Bia");
-//            individuos.insertOne(novoUser);
+            Document novoUser = new Document("name","Joao");
+            individuos.insertOne(novoUser);
 
-           Document updDocument = new Document("name", "pimas2");
+           Document updDocument = new Document("name", "Felipe");
           individuos.updateOne(updDocument, new Document("$set", new Document("idade", 20)));
 
             try {
@@ -38,20 +38,17 @@ public class Main {
                 System.out.println(e);
             }
 
+          DBObject query = new BasicDBObject("_id", "jo");
+           List<Integer> books = Arrays.asList(27464, 747854);
+           DBObject person = new BasicDBObject("_id", "jo")
+                  .append("name", "Jo Bloggs")
+                   .append("address", new BasicDBObject("street", "123 Fake St")
+                           .append("city", "Faketon")
+                           .append("state", "MA")
+                           .append("zip", 12345))
+                           .append("books", books);
 
-
-            //            DBObject query = new BasicDBObject("_id", "jo");
-
-            //            List<Integer> books = Arrays.asList(27464, 747854);
-//            DBObject person = new BasicDBObject("_id", "jo")
-//                    .append("name", "Jo Bloggs")
-//                    .append("address", new BasicDBObject("street", "123 Fake St")
-//                            .append("city", "Faketon")
-//                            .append("state", "MA")
-//                            .append("zip", 12345))
-//                    .append("books", books);
-//
-//            collection.insert(person);
+            collection.insert(person);
 
     }
 }
