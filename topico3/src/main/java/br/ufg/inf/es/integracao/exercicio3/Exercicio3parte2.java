@@ -10,8 +10,17 @@ package br.ufg.inf.es.integracao.exercicio3;
  * realiza recuperação da instância da classe Turma nele serializado.
  */
 public class Exercicio3parte2 {
-
-}
+    Turma turma = new Turma();
+    try {
+        turma = criaObjeto(args[0]);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (XMLStreamException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+}  
 
 /**
  * Método que criar um objeto por meio da enntrada dos dados recuperados.
