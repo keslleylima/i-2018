@@ -5,6 +5,14 @@
  */
 package br.ufg.inf.es.integracao.exercicio3;
 
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import javax.xml.stream.XMLInputFactory;
+import javax.xml.stream.XMLStreamException;
+import javax.xml.stream.XMLStreamReader;
+import java.io.*;
+
 /**
  * Essa Classe a partir de um documento XML, que está armazenado em um arquivo,
  * realiza recuperação da instância da classe Turma nele serializado.
