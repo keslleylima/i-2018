@@ -56,7 +56,7 @@ public class Exercicio3parte1 {
      * @throws FileNotFoundException
      * @throws UnsupportedEncodingException
      */
-    private static void escreverNoArquivo(String xmlString, String pathname) throws FileNotFoundException, UnsupportedEncodingException {
+    public static void escreverNoArquivo(String xmlString, String pathname) throws FileNotFoundException, UnsupportedEncodingException {
         PrintWriter file = new PrintWriter(pathname,"UTF-8" );
         file.write(xmlString);
         file.close();
