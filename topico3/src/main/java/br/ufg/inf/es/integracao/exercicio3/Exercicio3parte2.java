@@ -18,16 +18,23 @@ import java.io.*;
  * realiza recuperação da instância da classe Turma nele serializado.
  */
 public class Exercicio3parte2 {
-    Turma turma = new Turma();
-    try {
-        turma = criaObjeto(args[0]);
-        } catch (FileNotFoundException e) {
+    
+    /**
+     * Metodo princila responsável por chama o metodo de criar objeto
+     * @param args nome do arquivo em formato XML.
+     */
+    public static void main(String[] args) {
+       Turma turma = new Turma();
+       try {
+         turma = criaObjeto(args[0]);
+       } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (XMLStreamException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        } 
+    }   
 }  
 
 /**
@@ -47,9 +54,9 @@ public static Turma criaObjeto(String directory) throws XMLStreamException, IOEx
       }
 }
 
- /**
-  * Método que recuperar os dados do arquivo.
-  */
+/**
+ * Método que recuperar os dados do arquivo.
+ */
 public static String pegaDados(InputStream aux) throws IOException, XMLStreamException {
     StringBuilder arq = new StringBuilder();
     String line;
